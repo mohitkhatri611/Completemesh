@@ -127,7 +127,7 @@
             <p id="URLDom"></p>
             
             <footer class="w3-container cm-dark-blue" style="padding: 12px; margin-top:250px; ">
-                <p>&#169;2017 CompleteMesh. All Rights Reserved<br />Design and Developed by : <b>Mohit Khatri</b></p>
+                <p>&#169;2017 CompleteMesh. All Rights Reserved<br />Design and Developed by : <b>Mohit Khatri </b></p>
             </footer>
         </div>
         <%--middle content End heading content and footer--%>
