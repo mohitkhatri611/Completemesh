@@ -1,7 +1,8 @@
 # Completemesh
 
 Screenshots:
-![1](https://user-images.githubusercontent.com/26305776/86537863-cb08fd00-bf0f-11ea-80c7-1023cdc641fa.png widht="20")![2](https://user-images.githubusercontent.com/26305776/86537869-d3613800-bf0f-11ea-9bcd-479638abf901.png)
+![1](https://user-images.githubusercontent.com/26305776/86537863-cb08fd00-bf0f-11ea-80c7-1023cdc641fa.png)
+![2](https://user-images.githubusercontent.com/26305776/86537869-d3613800-bf0f-11ea-9bcd-479638abf901.png)
 
 ![3](https://user-images.githubusercontent.com/26305776/86537871-d78d5580-bf0f-11ea-97a1-08ee6b1e5436.png)
 ![4](https://user-images.githubusercontent.com/26305776/86537891-f0960680-bf0f-11ea-9694-54ac82204e4b.png)
