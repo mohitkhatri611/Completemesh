@@ -1,7 +1,7 @@
 # Completemesh
 
 Screenshots:
-<img src="Completemesh/screenshots/1.png" style=" width:10px ; height:10px " />
+<img src="Completemesh/screenshots/1.png" style=" width:10%; height:10px " />
 
 sda
 asd
