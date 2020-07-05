@@ -1,0 +1,255 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Completemesh.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+
+    <!-- Start Google Adsence -->
+    
+
+
+    <!-- End Google Adsence -->
+
+    <title>CompleteMesh</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Completemesh provide the free python tutorials basic and advance. If you are new to programming language then you can start learn python because it is easy to understand and 
+       if you know about python you can directly move to the examples and project sections which would save your time, python basic, python advance, python examples, python projects, python tutorials,  " />
+    <meta name="keywords" content="completemesh,completemesh website, complete mesh, python tutorials, tutorials python, completemesh python tutorials, python tutorials completemesh, python basic and advance tutorials, python tutorials with examples" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/cm-css.css" rel="stylesheet" />
+
+
+    <style>
+        body {
+            font-family: "Roboto", sans-serif
+        }
+
+        .w3-bar-block .w3-bar-item {
+            padding: 16px;
+            font-weight: bold
+        }
+        .current-link {
+    color:#baada7;
+     background-color:red;
+}
+        
+        
+       
+    </style>
+    
+
+   
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body onload="myFunction();">
+
+    <!-- Google Tag Manager (noscript) -->
+
+<!-- End Google Tag Manager (noscript) -->
+
+    <form id="form1" runat="server">
+
+        <%--left sidebarr or navigation barr Start--%>
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card-2" style="z-index: 3; width: 250px;" id="mySidebar">
+            <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#">
+                <h4 style="width:80%;color:red;font-weight:bold">Completemesh.com</h4></a>
+            <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+            <a class="w3-bar-item w3-button cm-dark-blue" href="#">Home</a>
+            <a class="w3-bar-item w3-button" href="/tutorials/python/python_introduction.aspx">Python Tutorials</a>
+            <%--<a class="w3-bar-item w3-button" href="#">Link 2</a>
+            <a class="w3-bar-item w3-button" href="#">Link 3</a>
+            <a class="w3-bar-item w3-button" href="#">Link 4</a>
+            <a class="w3-bar-item w3-button" href="#">Link 5</a>--%>
+           <%-- <div>
+                <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+                <div id="demo" class="w3-hide">
+                    <a class="w3-bar-item w3-button" href="#">Link</a>
+                    <a class="w3-bar-item w3-button" href="#">Link</a>
+                    <a class="w3-bar-item w3-button" href="#">Link</a>
+                </div>
+            </div>--%>
+        </nav>
+
+
+        <%--left sidebarr or navigation bar End--%>
+
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor: pointer" id="myOverlay"></div>
+
+
+
+        <%--right side barr Start--%>
+        <div class="w3-main" style="margin-left: 250px;">
+
+            <div id="myTop" class="w3-container w3-top cm-dark-blue w3-large">
+                <p style="padding:2px;margin:1px">
+                    <%--<i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>--%>
+                    <a class="w3-bar-item w3-button" href="/default.aspx">Home</a><a class="w3-bar-item w3-button" href="/contact.aspx">Contact</a><%--<a class="w3-bar-item w3-button" href="#">Link 4</a>--%>
+                </p>
+            </div>
+
+
+
+
+
+
+
+
+            <%--middle content Start heading content and footer--%>
+
+
+
+            <header class="w3-container" style="padding: 34px 32px">
+               <%-- <h1 class="w3-xxxlarge">W3.CSS</h1>--%>
+            </header>
+
+
+            <div class="w3-container" style="padding: 20px;max-width:1080px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <p id="demo"></p>
+            <p id="demo2"></p><br /><br />
+              <p id="demo3"></p>
+            <p id="URLDom"></p>
+            
+            <footer class="w3-container cm-dark-blue" style="padding: 12px; margin-top:250px; ">
+                <p>&#169;2017 CompleteMesh. All Rights Reserved<br />Design and Developed by : <b>Mohit Khatri</b></p>
+            </footer>
+        </div>
+        <%--middle content End heading content and footer--%>
+        <%--right side barr Start--%>
+        <script>
+            // Open and close the sidebar on medium and small screens
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Change style of top container on scroll
+            window.onscroll = function () { myFunction() };
+            function myFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+                    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+                } else {
+                    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+                    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+                }
+            }
+
+            // Accordions
+            function myAccordion(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                    x.previousElementSibling.className += " w3-theme";
+                } else {
+                    x.className = x.className.replace("w3-show", "");
+                    x.previousElementSibling.className =
+                        x.previousElementSibling.className.replace(" w3-theme", "");
+                }
+            }
+            //function myFunction2() {
+            //    var y = location.href;
+            //    document.getElementById("demo3").innerHTML = y ;
+
+                //var x = location.pathname;
+                //document.getElementById("demo2").innerHTML = x;
+
+                //var x = location.host;
+                //document.getElementById("demo3").innerHTML = x;
+           // }                      
+        </script>
+        <%--Testing site Enter--%>
+    
+    </form>
+
+    <%-- <script>
+            function myFunction() {
+                 var y = location.href;
+               
+                var x = document.links;
+                var txt = "";
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    txt = txt + x[i].href + "<br>";
+                    if (x[i]==y) {
+                      //  x[i].style.background = "red";
+                        x[i].classList.add("cm-current-head");
+                        x[i].scrollIntoView();
+                    } 
+                    
+                }
+                document.getElementById("demo").innerHTML = txt;
+
+                //capturing the title
+                var t = document.title;
+                document.getElementById("demo3").innerHTML = t;
+
+                //returning the url of the document fully
+                var z = document.URL;
+                document.getElementById("URLDom").innerHTML = z;
+                
+            }
+</script>--%>
+
+    <script>
+            function myFunction() {
+                var y = location.href;
+
+                var x = document.links;
+                var txt = "";
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    txt = txt + x[i].href + "<br>";
+                    if (x[i] == y) {
+                       
+                        x[i].classList.add("cm-current-head");
+
+
+
+                        x[i].scrollIntoView(true);
+                        x[i].scrollBy = 160;
+                        //x[i].addClass("active");
+
+
+                        //document.getElementById("demo1").innerHTML = x[i].scrollHeight;
+                        //if (x[i].scrollHeight > 50 || document.documentElement.scrollTop > 50) {
+                        //     x[i].scrollTop = 100;
+                        // } else {
+                        //     x[i].scrollTop = 100;
+                        // }
+
+                        x[i].scrollTop += 100;
+
+
+
+                    }
+
+                }
+
+              //  document.getElementById("demo").innerHTML = txt;
+
+            }
+</script>
+
+</body>
+</html>

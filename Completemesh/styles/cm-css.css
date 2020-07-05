@@ -1,0 +1,224 @@
+﻿
+
+.cm-dark-blue {
+    background-color: #00008b;
+    color: white;
+}
+
+.cm-button {
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #00008b;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 4px 4px 3px grey;
+    -webkit-box-shadow: 4px 4px 3px grey;
+    -moz-box-shadow: 4px 4px 3px grey;
+}
+    .cm-button:after {
+        padding-left: 5px;
+        content: "»";
+        font-size:24px
+    }
+
+    .cm-button:hover {
+        background-color: #4CAF50
+    }
+
+    .cm-button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 1px #666;
+        transform: translateY(4px);
+    }
+
+
+.cm-button-round {
+    background-color: #00008b; /* Blue */
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 3px;
+}
+
+
+    .cm-button-round:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .cm-button-rount:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+.cm-button-round:after {
+    padding-left: 5px;
+    content: "»";
+    font-size: 20px
+}
+
+
+.cm-button-blue {
+    margin: 30px auto 20px 30px;
+    height: 35px;
+    width: 70%;
+    background-color: #00008b; /* Blue */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 3px;
+}
+
+    .cm-button-blue:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .cm-button-blue:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+.cm-model-Background {
+    background-color: black;
+    filter: alpha(opacity=90) !important;
+    opacity: 0.6 !important;
+    z-index: 20;
+}
+
+.cm-model-popup {
+    padding: 20px 0px 24px 10px;
+    position: relative;
+    width: 500px;
+    min-height: 60%;
+    /*height: 60%;*/
+    /*background-color: white;*/
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+}
+
+
+
+.current_link{
+    background-color:red;
+    color:red;
+}
+.current {
+    background-color: red;
+    color: red;
+}
+
+a:active{
+    background-color:red;
+}
+.active {
+    background-color: red;
+}
+
+
+.cm-table th,td {
+    border: 1px solid #ccc
+}
+
+.cm-output {
+    padding: 0px;
+    margin: 0px;
+    background-color: ghostwhite;
+    border-left: 5px solid #0026ff !important
+}
+.cm-padding-nospace {
+    padding:0px;
+}
+.cm-nospace{
+    padding:0px;
+    margin:0px;
+    
+}
+.cm-marging-nospace {
+    margin: 0px;
+}
+
+/*active link*/
+.cm-pre-output {
+    padding: 0px 0px 5px 15px;
+    margin: 0px;
+}
+
+
+.cm-current2 {
+    background-color: silver;
+}
+
+
+.cm-example-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.cm-example-button {
+    display: inline-block;
+    padding: 5px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+    float: right;
+    border-radius: 1px;
+    box-shadow: 4px 4px 3px lightgray;
+    -webkit-box-shadow: 4px 4px 3px lightgray;
+    -moz-box-shadow: 4px 4px 3px lightgray;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right:15px;
+}
+
+    .cm-example-button:after {
+        padding-left: 5px;
+        content: "»";
+        font-size: 22px
+    }
+
+    .cm-example-button:hover {
+        background-color: red;
+    }
+
+    .cm-example-button:active {
+        background-color: #009688;
+        box-shadow: 0 1px #666;
+        transform: translateY(4px);
+    }
+.cm-container-full {
+    clear:both;
+    width: 100%
+}
+.cm-current-head{
+    background-color:red;
+}
